@@ -12,6 +12,7 @@ export function SectionFactory (props) {
       <select
         value={section_key}
         onChange={e => section_key_change(section_id, e.target.value)}
+        className='section-select'
       >
         {section_keys.map((key, index) => (
           <option key={index}> {key} </option>

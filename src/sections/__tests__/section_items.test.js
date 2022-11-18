@@ -29,7 +29,7 @@ describe('test section item', () => {
       />
     )
     expect(wrapper.html()).toEqual(
-      '<label>desc<input type="string" name="desc" id="0"/></label><label>height<input type="number" name="height" id="1"/></label>'
+      '<div class="section-items"><label>desc<input type="string" name="desc" id="0"/></label><label>height<input type="number" name="height" id="1"/></label></div>'
     )
   })
 })

@@ -20,7 +20,7 @@ describe('test section item', () => {
       />
     )
     expect(wrapper.html()).toEqual(
-      '<div class="section"><select><option> door </option><option> wall </option></select><label>desc<input type="string" name="desc" id="0"/></label><label>height<input type="number" name="height" id="1"/></label><label>lintel-height<input type="number" name="lintel-height" id="2"/></label></div>'
+      '<div class="section"><select class="section-select"><option> door </option><option> wall </option></select><div class="section-items"><label>desc<input type="string" name="desc" id="0"/></label><label>height<input type="number" name="height" id="1"/></label><label>lintel-height<input type="number" name="lintel-height" id="2"/></label></div></div>'
     )
   })
 })
