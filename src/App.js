@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import SectionsFactory from './sections/section_items_factory'
+import SectionsFactory from './sections/sections'
 
 export default function App () {
   const section_list = ['door', 'wall']
