@@ -1,4 +1,5 @@
 import React from 'react'
+import './section.css'
 
 export function SectionItemFactory (props) {
   const { itype, label, item_id, item_handler } = props
@@ -73,7 +74,7 @@ export function SectionFactory (props) {
   const section_configs = sections_configs.get(section_key)
 
   return (
-    <>
+    <div className='section'>
       <select
         value={section_key}
         onChange={e => section_key_change(section_id, e.target.value)}
@@ -87,7 +88,7 @@ export function SectionFactory (props) {
         section_id={section_id}
         section_handler={section_handler}
       />
-    </>
+    </div>
   )
 }
 
