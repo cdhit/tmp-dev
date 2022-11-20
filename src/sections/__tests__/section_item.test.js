@@ -16,4 +16,21 @@ describe('test section item', () => {
       '<label>desc<input type="string" name="desc"/></label>'
     )
   })
+
+  it('test SectionItemFactory event', () => {
+    function item_handler (item_id, value) {
+      throw `Parameter ${item_id} ${value}`
+    }
+    let wrapper = shallow(
+      <SectionItemFactory
+        itype='string'
+        label='desc'
+        id={1}
+        item_handler={item_handler}
+      />
+    )
+    expect(
+      wrapper.find('input').prop('onChange')({ target: { value: 123 } })
+    ).toThrow('Parameter undefined 123')
+  })
 })

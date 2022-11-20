@@ -11,6 +11,7 @@ export default function SectionsFactory (props) {
           section_id={section_id}
           section_handler={section_handler}
           section_key_change={section_key_change}
+          key={section_id}
         />
       ))}
     </>

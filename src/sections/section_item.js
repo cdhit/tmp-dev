@@ -9,7 +9,7 @@ export function SectionItemFactory (props) {
         type={itype}
         name={label}
         id={item_id}
-        onChange={() => item_handler(item_id)}
+        onChange={e => item_handler(item_id, e.target.value)}
       ></input>
     </label>
   )
